@@ -65,7 +65,7 @@ const EventPage = () => {
   };
 
   return (
-    <div className="bg-gray-100 text-center min-h-screen">
+    <div className="bg-base text-center min-h-screen">
       <header className="bg-base text-base-content py-6">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold">{eventDetails.name}</h1>
@@ -96,23 +96,23 @@ const EventPage = () => {
         </section>
 
         <section className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="bg-base rounded-lg shadow-md p-6">
             <h2 className="text-2xl font-semibold mb-4">Event Details</h2>
             <ul className="space-y-4">
               <li className="flex items-center">
-                <FaCalendarAlt className="text-blue-600 mr-2" />
+                <FaCalendarAlt className="text-base-content mr-2" />
                 <span>
                   <strong>Date:</strong> {eventDetails.date}
                 </span>
               </li>
               <li className="flex items-center">
-                <FaCalendarAlt className="text-blue-600 mr-2" />
+                <FaCalendarAlt className="text-base-content mr-2" />
                 <span>
                   <strong>Time:</strong> {eventDetails.time}
                 </span>
               </li>
               <li className="flex items-start">
-                <FaMapMarkerAlt className="text-blue-600 mr-2 mt-1" />
+                <FaMapMarkerAlt className="text-base-content mr-2 mt-1" />
                 <span>
                   <strong>Venue:</strong> {eventDetails.venue}
                   <br />
@@ -120,13 +120,13 @@ const EventPage = () => {
                 </span>
               </li>
               <li className="flex items-center">
-                <FaUserTie className="text-blue-600 mr-2" />
+                <FaUserTie className="text-base-content mr-2" />
                 <span>
                   <strong>Organizer:</strong> {eventDetails.organizer}
                 </span>
               </li>
               <li className="flex items-center">
-                <FaTrophy className="text-blue-600 mr-2" />
+                <FaTrophy className="text-base-content mr-2" />
                 <span>
                   <strong>Prize Pool:</strong> {eventDetails.prizePool}
                 </span>
@@ -134,7 +134,7 @@ const EventPage = () => {
             </ul>
           </div>
 
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="bg-base rounded-lg shadow-md p-6">
             <h2 className="text-2xl font-semibold mb-4">Event Flow</h2>
             <ul className="space-y-4">
               {eventFlow.map((item, index) => (
@@ -151,14 +151,14 @@ const EventPage = () => {
           <h2 className="text-2xl font-semibold mb-4">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div key={index} className="bg-base rounded-lg shadow-md overflow-hidden">
                 <button
                   className="w-full text-left p-4 focus:outline-none focus:ring-2 focus:ring-blue-600 flex justify-between items-center"
                   onClick={() => toggleFAQ(index)}
                 >
                   <span className="font-semibold">{faq.question}</span>
                   {expandedFAQ === index ? (
-                    <FaChevronUp className="text-blue-600" />
+                    <FaChevronUp className="blue-base-content" />
                   ) : (
                     <FaChevronDown className="text-blue-600" />
                   )}
@@ -171,7 +171,7 @@ const EventPage = () => {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <p className="p-4 bg-gray-50">{faq.answer}</p>
+                      <p className="p-4 bg-base">{faq.answer}</p>
                     </motion.div>
                   )}
                 </AnimatePresence>
