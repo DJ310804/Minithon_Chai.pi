@@ -70,7 +70,6 @@ const Cafeteria = () => {
     // ... (other food items)
   ];
 
-  // Count available food items
   const availableFoodCount = foodItems.filter(item => item.available).length;
 
   // Calculate total cost based on selected food quantities
@@ -87,13 +86,13 @@ const Cafeteria = () => {
   };
 
   const handleQuantityChange = (foodId, quantity) => {
-    setFormData({
-      ...formData,
+    setFormData(prevData => ({
+      ...prevData,
       foodOrders: {
-        ...formData.foodOrders,
+        ...prevData.foodOrders,
         [foodId]: quantity
       }
-    });
+    }));
   };
 
   const handleSubmit = (e) => {
