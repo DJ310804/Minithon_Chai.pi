@@ -3,6 +3,8 @@ import Layout from './components/Layout';
 import Profile from './components/Profile';
 import Login from './components/Login';
 import Dashboard from './components/dashboard/Dashboard';
+import Cafeteria from './components/Cafeteria';
+import Transport from './components/Transport';
 
 function App() {
   return (
