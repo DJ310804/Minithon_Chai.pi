@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="text-lg font-bold text-white">MyApp</div>
         <div className="flex items-center space-x-4">
           <Link to="/" className="text-white transition duration-300 ease-in-out hover:text-gray-200">Home</Link>
-          <Link to="/page1" className="text-white transition duration-300 ease-in-out hover:text-gray-200">Page1</Link>
+          <Link to="/cafeteria" className="text-white transition duration-300 ease-in-out hover:text-gray-200">Cafeteria</Link>
           <Link to="/login" className="text-white transition duration-300 ease-in-out hover:text-gray-200">Login</Link>
           <Link to="/profile" className="text-white transition duration-300 ease-in-out hover:text-gray-200">Profile</Link>
           <ThemeToggle />
