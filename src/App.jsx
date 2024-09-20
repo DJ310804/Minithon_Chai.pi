@@ -7,6 +7,7 @@ import Cafeteria from './components/Cafeteria';
 import Transport from './components/Transport';
 import Page2 from './components/page2';
 import EventPage from './components/EventPage';
+import EventsPage from './components/EventsPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="track-transport" element={<Transport />} /> 
         <Route path="event" element={<EventPage />} /> 
+        <Route path="events" element={<EventsPage />} /> 
       </Route>
     </Routes>
   );
