@@ -68,12 +68,12 @@ export default function Dashboard() {
           {/* Sidebar */}
           <div className="w-2/12 mr-6 h-screen">
             <div className="bg-base rounded-xl shadow-lg mb-6 px-6 py-4">
-              <Link to="" className="inline-block text-gray-600 hover:text-black my-4 w-full">
+              <Link to="" className="inline-block text-base-content hover:text-base-content my-4 w-full">
                 <span className="material-icons-outlined float-left pr-2">dashboard</span>
                 Library
                 <span className="material-icons-outlined float-right">keyboard_arrow_right</span>
               </Link>
-              <Link to="#" className="inline-block text-gray-600 hover:text-black my-4 w-full">
+              <Link to="#" className="inline-block text-base-content hover:text-base-content my-4 w-full">
                 <span className="material-icons-outlined float-left pr-2">tune</span>
                 Lab facilities
                 <span className="material-icons-outlined float-right">keyboard_arrow_right</span>
@@ -85,21 +85,18 @@ export default function Dashboard() {
           <div className="w-10/12">
             <div className="flex flex-row">
               {/* Welcome Card */}
-              <div className="bg-base border border-base rounded-xl w-7/12 mr-2 p-6">
+              <div className="bg-base border border-base-content rounded-xl w-7/12 mr-2 p-6">
                 <p className="text-5xl text-base">
                   Welcome <br />
-                  <strong>Lorem Ipsum</strong>
+                  <strong>SPIT TEAM Ipsum</strong>
                 </p>
-                <span className="bg-base text-xl text-base inline-block rounded-full mt-12 px-8 py-2">
-                  <strong>01:51</strong>
-                </span>
               </div>
 
               {/* Inbox Card */}
-              <div className="bg-base border border-base rounded-xl w-5/12 ml-2 p-6">
+              <div className="bg-base border border-base-content rounded-xl w-5/12 ml-2 p-6">
                 <p className="text-5xl text-base">
-                  Inbox <br />
-                  <strong>23</strong>
+                  Announcements <br />
+                  <strong>Admissions starting from October</strong>
                 </p>
                 <a
                   href="#"
@@ -199,7 +196,7 @@ export default function Dashboard() {
                   <h2 className="font-display text-3xl tracking-tight text-base-content dark:text-base-content sm:text-4xl">
                     The Faster, Affordable, Better Solution
                   </h2>
-                  <p className="mt-4 text-lg tracking-tight text-base-content dark:text-base-300">
+                  <p className="mt-4 text-lg tracking-tight text-base-content">
                     Discover the advantages of choosing QuickEdit over a traditional editor. Say goodbye to delays and elevate your content creation process.
                   </p>
                 </div>
@@ -233,7 +230,7 @@ export default function Dashboard() {
                     </ul>
                   </li>
                   <li>
-                    <ul role="list" className="flex flex-col gap-y-6 sm:gap-y-8">
+                    <ul role="list" clnssName="flex flex-col gap-y-6 sm:gap-y-8">
                       <li>
                         <figure className="relative rounded-2xl bg-base-100 dark:bg-base-900 p-6 text-center shadow-xl shadow-base-900/10">
                           <blockquote className="relative p-3">
