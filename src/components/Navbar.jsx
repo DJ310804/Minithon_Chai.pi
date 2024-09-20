@@ -17,7 +17,8 @@ const Navbar = () => {
         <div className="flex-grow flex justify-center">
           <div className="flex space-x-6">
             <Link to="/" className="text-gray-600 dark:text-gray-300 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
-            <Link to="/transport" className="text-gray-600 dark:text-gray-300 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-400">Track your transport</Link>
+            <Link to="/track-transport" className="text-gray-600 dark:text-gray-300 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-400">Track your transport</Link>
+            <Link to="/cafeteria" className="text-gray-600 dark:text-gray-300 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-400">Cafeteria</Link>
           </div>
         </div>
 

@@ -12,7 +12,7 @@ function App() {
         <Route path="cafeteria" element={<Cafeteria />} />
         <Route path="login" element={<Login />} />
         <Route path="profile" element={<Profile />} />
-        <Route path="transport" element={<Transport />} /> 
+        <Route path="track-transport" element={<Transport />} /> 
       </Route>
     </Routes>
   );

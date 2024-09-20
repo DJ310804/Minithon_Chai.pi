@@ -171,7 +171,7 @@ const Cafeteria = () => {
                       htmlFor={`food-${item.id}`}
                       className="block mb-2"
                     >
-                      {item.name} (${item.price.toFixed(2)})
+                      {item.name} (Rs.{item.price.toFixed(2)})
                     </label>
                     <input
                       type="number"
@@ -188,7 +188,7 @@ const Cafeteria = () => {
               </div>
 
               <div className="mb-6">
-                <h4 className="text-lg font-semibold">Total Cost: ${calculateTotal()}</h4>
+                <h4 className="text-lg font-semibold">Total Cost: Rs.{calculateTotal()}</h4>
               </div>
 
               <div className="flex items-center justify-between">

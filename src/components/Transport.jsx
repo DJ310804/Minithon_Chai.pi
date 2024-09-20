@@ -108,18 +108,24 @@ const CampusTransportTracker = () => {
           <h1 className="text-4xl font-bold text-base-content mb-8">Campus Transport Tracker</h1>
 
           {/* Alerts Section */}
-          <div className="bg-base p-4 rounded-lg mb-8">
+            <div className="bg-base p-4 rounded-lg mb-8">
             <h2 className="text-xl font-semibold text-base-content flex items-center">
-              <FaExclamationTriangle className="mr-2" /> Alerts
+                <FaExclamationTriangle className="mr-2" /> Alerts
             </h2>
             <ul className="list-disc pl-5">
-              {alerts.map((alert, index) => (
-                <li key={index} className={`text-${alert.type === 'danger' ? 'red' : 'orange'}-600`}>
-                  {alert.message}
+                {alerts.map((alert, index) => (
+                <li
+                    key={index}
+                    className={`${
+                    alert.type === 'danger' ? 'text-red-600' : 'text-orange-600'
+                    }`}
+                >
+                    {alert.message}
                 </li>
-              ))}
+                ))}
             </ul>
-          </div>
+            </div>
+
 
           {/* Bus Schedules Section */}
           <div className="bg-base rounded-lg shadow-lg overflow-hidden">
