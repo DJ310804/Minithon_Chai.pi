@@ -16,11 +16,8 @@ function App() {
         <Route path="cafeteria" element={<Cafeteria />} />
         <Route path="login" element={<Login />} />
         <Route path="profile" element={<Profile />} />
-<<<<<<< HEAD
         <Route path="dashboard" element={<Dashboard />} />
-=======
         <Route path="track-transport" element={<Transport />} /> 
->>>>>>> 72a471b6da5fc1f9c6ee153a5953aced46529d28
       </Route>
     </Routes>
   );
