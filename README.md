@@ -4,5 +4,3 @@
 # npm install tw-elements-react
 # npm install chart.js
 # npm install react-leaflet leaflet
-
-
