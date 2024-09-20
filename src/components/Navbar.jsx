@@ -33,7 +33,7 @@ const Navbar = () => {
             <Link to="/dashboard" className="text-gray-600 dark:text-gray-300 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
             <Link to="/track-transport" className="text-gray-600 dark:text-gray-300 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-400">Track your transport</Link>
             <Link to="/cafeteria" className="text-gray-600 dark:text-gray-300 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-400">Cafeteria</Link>
-            <Link to="/Event" className="text-gray-600 dark:text-gray-300 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-400">Event1</Link>
+            <Link to="/Events" className="text-gray-600 dark:text-gray-300 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-400">Events</Link>
           </div>
 
           {/* Right Section: Theme Toggle and Login */}
@@ -49,7 +49,7 @@ const Navbar = () => {
             <Link to="/dashboard" className="text-gray-600 dark:text-gray-300 py-2 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
             <Link to="/track-transport" className="text-gray-600 dark:text-gray-300 py-2 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-400">Track your transport</Link>
             <Link to="/cafeteria" className="text-gray-600 dark:text-gray-300 py-2 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-400">Cafeteria</Link>
-            <Link to="/Event" className="text-gray-600 dark:text-gray-300 py-2 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-400">Event1</Link>
+            <Link to="/events" className="text-gray-600 dark:text-gray-300 py-2 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-400">Events</Link>
           </div>
         )}
       </nav>
