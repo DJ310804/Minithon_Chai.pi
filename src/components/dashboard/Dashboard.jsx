@@ -1,6 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Bar, Pie } from 'react-chartjs-2';
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    ArcElement,
+    Title,
+    Tooltip,
+    Legend,
+  } from 'chart.js';
+
+  
+  // Register Chart.js components
+  ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    ArcElement,
+    Title,
+    Tooltip,
+    Legend
+  );
 
 export default function Dashboard() {
   // Data for the bar chart
@@ -88,46 +110,75 @@ export default function Dashboard() {
               </div>
             </div>
 
-            {/* Event Cards */}
-            <div className="flex flex-row h-64 mt-6">
-              <div className="bg-base rounded-xl shadow-lg px-6 py-4 w-4/12">
-                <div className="flex items-center justify-between">
-                  <label className="swap swap-flip text-9xl">
-  {/* this hidden checkbox controls the state */}
-  <input type="checkbox" />
+          {/* Event Cards */}
+<div className="flex flex-row h-64 mt-6">
+  <div className="bg-base rounded-xl shadow-lg px-6 py-4 w-4/12 overflow-hidden">
+    <div className="flex items-center justify-between">
+      <label className="swap swap-flip text-9xl">
+        <input type="checkbox" />
+        <div className="swap-on">
+          <img
+            src="./src/assets/Aeravat_24.webp"
+            alt="Sad"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+        <div className="swap-off">
+          <img
+            src="./src/assets/ipl_auction.jpeg"
+            alt="Happy"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </label>
+    </div>
+  </div>
 
-  <div className="swap-on">😈</div>
-  <div className="swap-off">😇</div>
-</label>
-                </div>
-              </div>
+  <div className="bg-base rounded-xl shadow-lg px-6 py-4 w-4/12 overflow-hidden">
+    <div className="flex items-center justify-between">
+      <label className="swap swap-flip text-9xl">
+        <input type="checkbox" />
+        <div className="swap-on">
+          <img
+            src="./src/assets/Aeravat_24.webp"
+            alt="Sad"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+        <div className="swap-off">
+          <img
+            src="./src/assets/CSI.jpg"
+            alt="Happy"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </label>
+    </div>
+  </div>
 
-              <div className="bg-base rounded-xl shadow-lg mx-6 px-6 py-4 w-4/12">
-                <div className="flex items-center justify-between">
-                <label className="swap swap-flip text-9xl">
-  {/* this hidden checkbox controls the state */}
-  <input type="checkbox" />
+  <div className="bg-base rounded-xl shadow-lg px-6 py-4 w-4/12 overflow-hidden">
+    <div className="flex items-center justify-between">
+      <label className="swap swap-flip text-9xl">
+        <input type="checkbox" />
+        <div className="swap-on">
+          <img
+            src="./src/assets/Aeravat_24.webp"
+            alt="Sad"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+        <div className="swap-off">
+          <img
+            src="./src/assets/ECell.png"
+            alt="Happy"
+            className="w-full h-auto object-cover"
+          />
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
 
-  <div className="swap-on">😈</div>
-  <div className="swap-off">😇</div>
-</label>
-                </div>
-              </div>
-
-              <div className="bg-base rounded-xl shadow-lg px-6 py-4 w-4/12">
-                <div className="flex items-center justify-between">
-                  
-                  <label className="swap swap-flip text-9xl">
-  {/* this hidden checkbox controls the state */}
-  <input type="checkbox" />
-
-  <div className="swap-on">😈</div>
-  <div className="swap-off">😇</div>
-</label>
-                </div>
-              </div>
-            </div>
-            
 
             {/* Bar and Pie Charts */}
             <div className="flex flex-row mt-6">

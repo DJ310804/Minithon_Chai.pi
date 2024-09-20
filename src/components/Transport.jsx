@@ -10,7 +10,7 @@ const busIcon = new L.Icon({
   iconSize: [40, 40],
 });
 
-const CampusTransportTracker = () => {
+const Transport = () => {
   const [buses, setBuses] = useState([]);
   const [schedules, setSchedules] = useState([]);
   const [selectedRoute, setSelectedRoute] = useState(null);
@@ -222,4 +222,4 @@ const CampusTransportTracker = () => {
   );
 };
 
-export default CampusTransportTracker;
+export default Transport;

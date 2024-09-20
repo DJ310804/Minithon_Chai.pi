@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ThemeToggle from './ThemeToggle';
-import logo from '../assets/logo.png'; // Make sure to replace this with the actual path to your logo
+import logo from '../assets/logo.png'; 
 
 const Navbar = () => {
   return (
