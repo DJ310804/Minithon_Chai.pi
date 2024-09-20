@@ -27,10 +27,10 @@ import {
 export default function Dashboard() {
   // Data for the bar chart
   const barData = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+    labels: ['Elite', 'Super Dream', 'Dream', 'Satisfactory', 'Average', 'Below Average'],
     datasets: [
       {
-        label: 'Sales',
+        label: 'Students',
         data: [65, 59, 80, 81, 56, 55],
         backgroundColor: 'rgba(75, 192, 192, 0.6)',
       },
@@ -39,11 +39,11 @@ export default function Dashboard() {
 
   // Data for the pie chart
   const pieData = {
-    labels: ['Red', 'Blue', 'Yellow'],
+    labels: ['Comps', 'CSE', 'EXTC'],
     datasets: [
       {
-        label: '# of Votes',
-        data: [12, 19, 3],
+        label: 'Students',
+        data: [121, 123, 142],
         backgroundColor: [
           'rgba(255, 99, 132, 0.6)',
           'rgba(54, 162, 235, 0.6)',
@@ -111,6 +111,7 @@ export default function Dashboard() {
             </div>
 
           {/* Event Cards */}
+         
 <div className="flex flex-row h-64 mt-6">
   <div className="bg-base rounded-xl shadow-lg px-6 py-4 w-4/12 overflow-hidden">
     <div className="flex items-center justify-between">
@@ -118,38 +119,38 @@ export default function Dashboard() {
         <input type="checkbox" />
         <div className="swap-on">
           <img
-            src="./src/assets/Aeravat_24.webp"
+            src="./src/assets/Rotaract.png"
             alt="Sad"
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-contain"
           />
         </div>
         <div className="swap-off">
+          <img
+            src="./src/assets/Aeravat_24.webp"
+            alt="Happy"
+            className="w-full h-auto object-contain"
+          />
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <div className="bg-base rounded-xl shadow-lg px-6 py-4 w-4/12 overflow-hidden">
+    <div className="flex items-center justify-between">
+      <label className="swap swap-flip text-9xl">
+        <input type="checkbox" />
+        <div className="swap-on">
           <img
             src="./src/assets/ipl_auction.jpeg"
-            alt="Happy"
-            className="w-full h-auto object-cover"
-          />
-        </div>
-      </label>
-    </div>
-  </div>
-
-  <div className="bg-base rounded-xl shadow-lg px-6 py-4 w-4/12 overflow-hidden">
-    <div className="flex items-center justify-between">
-      <label className="swap swap-flip text-9xl">
-        <input type="checkbox" />
-        <div className="swap-on">
-          <img
-            src="./src/assets/Aeravat_24.webp"
             alt="Sad"
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-contain"
           />
         </div>
         <div className="swap-off">
           <img
-            src="./src/assets/CSI.jpg"
+            src="./src/assets/IEEE.jpg"
             alt="Happy"
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-contain"
           />
         </div>
       </label>
@@ -162,16 +163,85 @@ export default function Dashboard() {
         <input type="checkbox" />
         <div className="swap-on">
           <img
-            src="./src/assets/Aeravat_24.webp"
+            src="./src/assets/carnival.webp"
             alt="Sad"
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-contain"
           />
         </div>
         <div className="swap-off">
           <img
             src="./src/assets/ECell.png"
             alt="Happy"
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-contain"
+          />
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+<div className="mt-4 text-right">
+
+          <div className="flex flex-row h-64 mt-6">
+  <div className="bg-base rounded-xl shadow-lg px-6 py-4 w-4/12 overflow-hidden">
+    <div className="flex items-center justify-between">
+      <label className="swap swap-flip text-9xl">
+        <input type="checkbox" />
+        <div className="swap-on">
+          <img
+            src="./src/assets/CSI.jpg"
+            alt="Sad"
+            className="w-full h-auto object-contain"
+          />
+        </div>
+        <div className="swap-off">
+          <img
+            src="./src/assets/hackathon.webp"
+            alt="Happy"
+            className="w-full h-auto object-contain"
+          />
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <div className="bg-base rounded-xl shadow-lg px-6 py-4 w-4/12 overflow-hidden">
+    <div className="flex items-center justify-between">
+      <label className="swap swap-flip text-9xl">
+        <input type="checkbox" />
+        <div className="swap-on">
+          <img
+            src="./src/assets/Spoorthi.jpg"
+            alt="Sad"
+            className="w-full h-auto object-contain"
+          />
+        </div>
+        <div className="swap-off">
+          <img
+            src="./src/assets/marathon_jtiNcPb.jpeg"
+            alt="Happy"
+            className="w-full h-auto object-contain"
+          />
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <div className="bg-base rounded-xl shadow-lg px-6 py-4 w-4/12 overflow-hidden">
+    <div className="flex items-center justify-between">
+      <label className="swap swap-flip text-9xl">
+        <input type="checkbox" />
+        <div className="swap-on">
+          <img
+            src="./src/assets/ECell.png"
+            alt="Sad"
+            className="w-full h-auto object-contain"
+          />
+        </div>
+        <div className="swap-off">
+          <img
+            src="./src/assets/carnival.webp"
+            alt="Happy"
+            className="w-full h-auto object-contain"
           />
         </div>
       </label>
@@ -179,18 +249,27 @@ export default function Dashboard() {
   </div>
 </div>
 
+<Link to="/events" className="text-blue-500 underline">
+    View More
+  </Link>
+</div>
+{/* View More Link */}
 
-            {/* Bar and Pie Charts */}
-            <div className="flex flex-row mt-6">
-              <div className="w-1/2 mr-2">
-                <h3 className="text-xl font-bold mb-4">Sales Bar Chart</h3>
-                <Bar data={barData} options={{ responsive: true }} />
-              </div>
-              <div className="w-1/2 ml-2">
-                <h3 className="text-xl font-bold mb-4">Votes Pie Chart</h3>
-                <Pie data={pieData} options={{ responsive: true }} />
-              </div>
-            </div>
+{/* Adding margin between the event cards and charts */}
+<div className="mt-12"></div>
+
+{/* Bar and Pie Charts */}
+<div className="flex flex-row mt-6">
+  <div className="w-1/2 mr-2">
+    <h3 className="text-xl font-bold mb-4">Placements</h3>
+    <Bar data={barData} options={{ responsive: true }} />
+  </div>
+  <div className="w-1/2 ml-2">
+    <h3 className="text-xl font-bold mb-4">Students enrolled</h3>
+    <Pie data={pieData} options={{ responsive: true }} />
+  </div>
+</div>
+
 
             {/* Comparison Section */}
             <section id="comparison" aria-label="QuickEdit vs traditional editor" className="bg-base-100 dark:bg-base-900 py-20 sm:py-32">
