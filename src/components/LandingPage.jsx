@@ -3,6 +3,8 @@ import { FaGraduationCap, FaBriefcase, FaMapMarkerAlt, FaPhone, FaEnvelope } fro
 import { motion } from "framer-motion";
 
 import GeminiForm from "./GeminiForm";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 
 const LandingPage = () => {
@@ -12,6 +14,8 @@ const LandingPage = () => {
     };
 
     return (
+        <div>
+            {/* <Navbar/> */}
         <div className="font-sans">
             {/* Hero Section */}
             <section className="relative h-screen">
@@ -148,6 +152,8 @@ Mobile Numbers: 9930362014 /  9930309463
                     </div>
                 </div>
             </motion.section>
+        </div>
+        {/* <Footer/> */}
         </div>
     );
 };

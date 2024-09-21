@@ -68,7 +68,7 @@ export default function Dashboard() {
           {/* Sidebar */}
           <div className="w-2/12 mr-6 h-screen">
             <div className="bg-base rounded-xl shadow-lg mb-6 px-6 py-4">
-              <Link to="" className="inline-block text-gray-600 hover:text-black my-4 w-full">
+              <Link to="/LibraryPage" className="inline-block text-gray-600 hover:text-black my-4 w-full">
                 <span className="material-icons-outlined float-left pr-2">dashboard</span>
                 Library
                 <span className="material-icons-outlined float-right">keyboard_arrow_right</span>
